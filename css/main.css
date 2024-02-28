@@ -1,0 +1,6 @@
+/* our custom CSS file*/ 
+.card-img-top {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
