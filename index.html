@@ -22,7 +22,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/cover.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
-
+		<script src="js/index.js" defer></script>
 		<!-- Link your JS File here via a script tag -->
 	</head>
 
@@ -109,14 +109,14 @@
 							<div class="invalid-feedback">Invalid Description Name</div>
 						</div>
 						<div class="col-lg-2 mb-1">
-							<select name="album-art" class="form-select" id="albume-art ">
+							<select name="album-art" class="form-select" id="album-art">
 								<option selected value="">Select album art</option>
 								<option value="mountains.jpg">Mountains</option>
 								<option value="gazing_at_stars.jpg">Gazing at stars</option>
 								<option value="cassette.jpg">Casette</option>
 								<option value="tv.jpg">TV Stand</option>
 							</select>
-							<div class="invalid-feedback">Select album art</div>
+							<div id="invalid-album-art-feedback" class="invalid-feedback">Select album art</div>
 						</div>
 						<div class="col-lg mb-1">
 							<button type="submit" class="btn btn-primary w-100">Save</button>
