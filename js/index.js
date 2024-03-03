@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Valiates the album title (Between 1 and 20 characters.)
+    // Valiates the album title (Between 1 and 15 characters.)
     function validateAlbumTitle() {
         var titleValue = albumTitle.value.trim();
         if (titleValue.length > 0 && titleValue.length <= 15) {
@@ -44,13 +44,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Validates the album description (between 1 and 40 characters.)
+    // Validates the album description (between 1 and 20 characters.)
     function validateAlbumDescription() {
         var descriptionValue = albumDescription.value.trim();
         if (descriptionValue.length > 0 && descriptionValue.length <= 30) {
             return true;
         } else {
-            setInvalidState(albumDescription, "Album Description must be between 1 and 15 characters");
+            setInvalidState(albumDescription, "Album Description must be between 1 and 20 characters");
             return false;
         }
     }
