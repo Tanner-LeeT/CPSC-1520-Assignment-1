@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Valiates the album title (Between 1 and 20 characters.)
     function validateAlbumTitle() {
         var titleValue = albumTitle.value.trim();
-        if (titleValue.length > 0 && titleValue.length <= 20) {
+        if (titleValue.length > 0 && titleValue.length <= 15) {
             return true;
         } else {
             setInvalidState(albumTitle, "Album Title must be between 1 and 20 characters");
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Validates the album description (between 1 and 40 characters.)
     function validateAlbumDescription() {
         var descriptionValue = albumDescription.value.trim();
-        if (descriptionValue.length > 0 && descriptionValue.length <= 20) {
+        if (descriptionValue.length > 0 && descriptionValue.length <= 30) {
             return true;
         } else {
             setInvalidState(albumDescription, "Album Description must be at most 40 characters");
